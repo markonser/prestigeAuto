@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  /* gap: 1rem; */
+}
+
+.map_left_nav {
+  background-color: $--dark_gray;
+  padding: 15px;
+  color: $--default-white;
+}
+
+.leaflet-container {
+  height: calc(100vh - 59px);
+  width: 100%;
+  border: 1px solid $--dark_gray;
+
+}
+
+.cluster-icon {
+  background-color: $--dark_gray;
+  height: 2em;
+  width: 2em;
+  color: $--default-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 0 0px 5px $--dark_gray;
+}

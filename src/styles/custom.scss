@@ -1,0 +1,16 @@
+@import './variables';
+
+.nav .nav-link {
+  --bs-nav-link-color: #fff;
+  --bs-nav-link-hover-color: #fff;
+}
+
+.nav .nav-link:hover {
+  background-color: #8d8d8d;
+}
+
+.accordion-body {
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 0.1rem;
+  
+}
