@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.fixed_search {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $--dark_gray_second;
+  padding: 5px;
+  color: $--default-white;
+}
+
+.fixed_search_container {
+  margin-right: 2px;
+}
+.fixed_search_container.active{
+background-color: $--tab-nav-link-hover;
+}

@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.drivers_list_container {
+  min-width: 1860px;
+  margin: 0 auto;
+}
+
+.fio,
+.born_place,
+.driver_license_info,
+.passport {
+  min-width: 20rem;
+  max-width: 20rem;
+  word-wrap: normal;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.driver_telephone {
+  min-width: 10rem;
+  max-width: 10rem;
+  word-wrap: normal;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fixed_auto,
+.in_vocation_start,
+.in_vocation_end {
+  min-width: 8rem;
+  max-width: 8rem;
+  word-wrap: normal;
+  padding-left: 5px;
+  padding-right: 5px;
+}

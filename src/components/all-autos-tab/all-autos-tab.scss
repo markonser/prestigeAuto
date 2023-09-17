@@ -1,0 +1,63 @@
+@import '../../styles/variables';
+
+.all_autos_container {
+  min-width: 1860px;
+  margin: 0 auto;
+}
+
+.gos_number {
+  display: flex;
+  flex-direction: column;
+}
+
+.gos_number,
+.marka,
+.comments,
+.pallets_or_trailer,
+.tires,
+.fixed_trailer {
+  min-width: 9rem;
+  max-width: 9rem;
+  text-align: center;
+}
+
+.load_capacity {
+  width: 3rem;
+  text-align: center;
+}
+
+.thead_cell {
+  transform: rotate(-90deg);
+  text-align: center;
+}
+
+.inner_length,
+.inner_width,
+.inner_height,
+.gate_height,
+.gate_width,
+.cargo_volume,
+.group_name,
+.is_service,
+.is_driver_exist {
+  min-width: 4rem;
+  max-width: 4rem;
+  text-align: center;
+}
+
+
+.outer_auto_dimensions,
+.fixed_driver {
+  min-width: 15rem;
+  max-width: 15rem;
+  text-align: center;
+}
+
+.fixed_driver {
+  text-align: left;
+}
+.fixed_driver:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}

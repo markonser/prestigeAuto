@@ -9,8 +9,6 @@ function MainPage() {
       <div className="main_header_tabs">
         <HeaderTabs />
       </div>
-
-      <div className="main_content"></div>
     </div>
   );
 }

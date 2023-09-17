@@ -1,0 +1,72 @@
+@import './variables';
+
+.nav .nav-link {
+  --bs-nav-link-color: #fff;
+  --bs-nav-link-hover-color: #fff;
+}
+
+.nav .nav-link:hover {
+  background-color: #adb5bd;
+}
+
+.accordion-button {
+  padding: 0.25rem;
+
+}
+
+.accordion-body {
+  --bs-accordion-body-padding-x: 0.25rem;
+  --bs-accordion-body-padding-y: 0.1rem;
+  background-color: #adb5bd;
+}
+
+body {
+  min-width: 100%;
+  background-color: $--dark_gray_first;
+}
+
+.list_item {
+  min-width: 100%;
+  min-height: 4rem;
+  border-top: 1px solid transparent;
+  border-bottom: 1px dashed $--tab-nav-link-hover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list_item:hover {
+  background-color: $--tab-nav-link-hover;
+}
+
+.header_filters_row {
+  display: flex;
+  min-height: 2rem;
+  font-weight: bold;
+  position: sticky;
+  top: 5rem;
+  background-color: $--dark_gray_third;
+}
+
+.list_header {
+  display: flex;
+  height: 5rem;
+  font-weight: bold;
+  position: sticky;
+  top: 0px;
+  background-color: $--dark_gray_third;
+}
+
+.header_filters_row:hover,
+.list_header:hover {
+  background-color: $--dark_gray_third;
+}
+
+.cell_item{
+  border: 1px dashed transparent;
+  border-right: 1px dashed $--tab-nav-link-hover;
+}
+
+.cell_item:hover{
+  border: 1px solid $--dark_gray_second;
+}

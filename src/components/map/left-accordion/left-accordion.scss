@@ -1,5 +1,29 @@
 @import '../../../styles/variables';
 
-.car_item:hover{
-background-color: $--tab-nav-link-hocer;
+.car_item:hover {
+  background-color: $--tab-nav-link-hover;
+  cursor: pointer;
+}
+
+.left_accordion_container {
+  max-height: calc(100vh - 59px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.count_in_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $--dark_gray_first;
+  color: $--default-white;
+  margin-right: 20px;
 }

@@ -3,29 +3,55 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Map from '../map/map';
 import './header-tabs.scss';
-import "../../styles/custom.scss";
+import "../../styles/global.scss";
+import GaragePage from '../../pages/garage/GaragePage';
+import DriversPage from '../../pages/drivers/DriversPage';
+import OrdersPage from '../../pages/orders/OrdersPage';
+import ClientsPage from '../../pages/clients/ClientsPage';
+import CreateOrderPage from '../../pages/create-order-page/CreateOrderPage';
 
 function HeaderTabs() {
-  const [key, setKey] = useState('map');
+  const [key, setKey] = useState('new_order_page');
+
+  function headerTabClick(k) {
+    if (k === '') {
+      console.log('hello');
+    } else {
+      console.log(k);
+      setKey(k);
+    }
+  }
 
   return (
     <Tabs
       id="header_nav_tabs"
       activeKey={key}
-      onSelect={(k) => setKey(k)}
-      className="mb-3 header_nav_tabs"
+      onSelect={(k) => headerTabClick(k)}
+      className="mb-1 mt-1 header_nav_tabs"
     >
       <Tab eventKey="map" title="Карта">
         <Map />
       </Tab>
-      <Tab eventKey="new_order" title="Новый заказ">
+      <Tab eventKey="new_order_page" title="Новый заказ">
+        <CreateOrderPage />
+      </Tab>
+      <Tab eventKey="waiting_orders" title="Очередь заказов">
         Tab content for Profile
       </Tab>
-      <Tab eventKey="waiting_orders_list" title="Не распределены (3 шт)">
-        Tab content for Profile
+      <Tab eventKey="orders_page" title="Все заказы">
+        <OrdersPage />
       </Tab>
-      <Tab eventKey="all_orders_list" title="Все заказы">
-        Tab content for Contact
+      <Tab eventKey="garage" title="Гараж">
+        <GaragePage />
+      </Tab>
+      <Tab eventKey="drivers" title="Водители">
+        <DriversPage />
+      </Tab>
+      <Tab eventKey="clients" title="Контрагенты">
+        <ClientsPage />
+      </Tab>
+      <Tab eventKey="chat" title="Чат">
+
       </Tab>
     </Tabs>
   );

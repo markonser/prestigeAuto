@@ -8,25 +8,22 @@
 
 .map {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 500px 1fr;
   /* gap: 1rem; */
 }
 
 .map_left_nav {
-  background-color: $--dark_gray;
-  padding: 15px;
+  background-color: $--dark_gray_first;
   color: $--default-white;
 }
 
 .leaflet-container {
   height: calc(100vh - 59px);
   width: 100%;
-  border: 1px solid $--dark_gray;
-
 }
 
 .cluster-icon {
-  background-color: $--dark_gray;
+  background-color: $--dark_gray_first;
   height: 2em;
   width: 2em;
   color: $--default-white;
@@ -35,5 +32,5 @@
   justify-content: center;
   border-radius: 50%;
   font-size: 1.2rem;
-  box-shadow: 0 0 0px 5px $--dark_gray;
+  box-shadow: 0 0 0px 5px $--dark_gray_first;
 }

@@ -1,6 +1,10 @@
 @import '../../styles/variables';
 
 .main_container {
-  min-width: 100%;
-  background-color: $--dark_gray;
+  min-width: fit-content;
+  // background-color: $--dark_gray_first;
+}
+
+.tab-content{
+  background-color: $--dark_gray_third;
 }

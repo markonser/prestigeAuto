@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+.orders_tab_container{
+  min-width: fit-content;
+}
+.order_date,
+.gos_number,
+.work_time_start,
+.work_time_end,
+.order_cost,
+.work_summary {
+  min-width: 7rem;
+  max-width: 7rem;
+  text-align: center;
+}
+
+.disp_name,
+.client_name,
+.address_start,
+.address_end,
+.comments {
+  min-width: 12rem;
+  max-width: 12rem;
+}
+
+.work_in_hours,
+.rate_per_hour,
+.rate_per_km,
+.mkad_over_distance,
+.extra_money,
+.extra_time,
+.work_time_start,
+.work_time_end,
+.order_cost {
+  min-width: 5rem;
+  max-width: 5rem;
+  text-align: center;
+}

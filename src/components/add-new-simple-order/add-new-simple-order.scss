@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.add_new_simle_order_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.add_new_simle_order_form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  background-color: $--default-white;
+  border-radius: 6px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.label_container{
+  padding: 1rem;
+}
+
+.add_new_simle_order_submit{
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}

@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.searchContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  border: none;
+  margin: 2px;
+}
+
+.searchAutoInput {
+  width: 90%;
+  border: none;
+  padding: 3px;
+}
+
+.search_reset {
+  cursor: pointer;
+}
+
+.search_reset:hover {
+  color: $--red;
+}

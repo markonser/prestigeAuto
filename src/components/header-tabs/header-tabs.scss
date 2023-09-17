@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 
-#header_nav_tabs {
+.header_nav_tabs {
   color: $--default-white;
+  background-color: $--dark_gray_first;
 }

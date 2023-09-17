@@ -37,7 +37,7 @@ const markers = [
   }
 ];
 
-export default function App() {
+export default function Map() {
   return (
     <div className="map">
       <div className="map_left_nav">
@@ -57,7 +57,7 @@ export default function App() {
           >
             {/* Mapping through the markers */}
             {markers.map((marker) => (
-              <Marker position={marker.geocode} icon={customIcon}>
+              <Marker position={marker.geocode} icon={customIcon} key={marker.geocode}>
                 <Popup>{marker.popUp}</Popup>
               </Marker>
             ))}
