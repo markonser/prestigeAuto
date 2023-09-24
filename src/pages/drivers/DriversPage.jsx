@@ -22,7 +22,7 @@ function DriversTab() {
         id="drivers_nav_tabs"
         activeKey={key}
         onSelect={(k) => tabClick(k)}
-        className="mb-3 drivers_nav_tabs"
+        className="second_level_nav_tabs drivers_nav_tabs"
       >
         <Tab eventKey="drivers_all" title="Все">
           <AllDriversTab />

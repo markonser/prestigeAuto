@@ -30,25 +30,25 @@ function AllAutosTab() {
         currentAuto={currentAuto}
       />
       }
-      <div className="list_item list_header">
-        <div className="cell_item gos_number">Гос. номер</div>
-        <div className="cell_item marka">Марка</div>
-        <div className="cell_item load_capacity thead_cell">Тонаж</div>
-        <div className="cell_item inner_length">Длина внутри</div>
-        <div className="cell_item inner_width">Ширина внутри</div>
-        <div className="cell_item inner_height">Высота внутри</div>
-        <div className="cell_item gate_height">Высота вход</div>
-        <div className="cell_item gate_width">Ширина вход</div>
-        <div className="cell_item cargo_volume">Объем м3</div>
-        <div className="cell_item outer_auto_dimensions">Габариты Д*Ш*В</div>
-        <div className="cell_item pallets_or_trailer">№прицепа / кол. паллет</div>
-        <div className="cell_item comments">Размер г/б, погруз., выс., рохла</div>
-        <div className="cell_item tires">Шины</div>
-        <div className="cell_item fixed_driver">Закрепленный водитель</div>
-        <div className="cell_item fixed_trailer">Закрепленный прицеп</div>
-        <div className="cell_item group_name">Группа</div>
+      <div className="list_header">
+        <div className="header_cell_item gos_number">Гос. номер</div>
+        <div className="header_cell_item marka">Марка</div>
+        <div className="header_cell_item load_capacity thead_cell">Тонаж</div>
+        <div className="header_cell_item inner_length">Длина внутри</div>
+        <div className="header_cell_item inner_width">Ширина внутри</div>
+        <div className="header_cell_item inner_height">Высота внутри</div>
+        <div className="header_cell_item gate_height">Высота вход</div>
+        <div className="header_cell_item gate_width">Ширина вход</div>
+        <div className="header_cell_item cargo_volume">Объем м3</div>
+        <div className="header_cell_item outer_auto_dimensions">Габариты Д*Ш*В</div>
+        <div className="header_cell_item pallets_or_trailer">№прицепа / кол. паллет</div>
+        <div className="header_cell_item comments">Размер г/б, погруз., выс., рохла</div>
+        <div className="header_cell_item tires">Шины</div>
+        <div className="header_cell_item fixed_driver">Закрепленный водитель</div>
+        <div className="header_cell_item fixed_trailer">Закрепленный прицеп</div>
+        <div className="header_cell_item group_name">Группа</div>
       </div>
-      <div className="list_item header_filters_row">
+      <div className="header_filters_row">
         <div className="gos_number">
           <Search
             filterActive={filterActive}

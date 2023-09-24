@@ -9,17 +9,17 @@ function AllDriversTab() {
   const [filterActive, setFilterActive] = useState('');
   return (
     <div className=' drivers_list_container'>
-      <div className="list_item list_header">
-        <div className="cell_item fio">ФИО</div>
-        <div className="cell_item passport">Данные паспорта</div>
-        <div className="cell_item born_place">Место рождения</div>
-        <div className="cell_item driver_license_info">Данные ВУ</div>
-        <div className="cell_item driver_telephone">Телефон</div>
-        <div className="cell_item fixed_auto">Закреплен за авто</div>
-        <div className="cell_item in_vocation_start">В отпуске с</div>
-        <div className="cell_item in_vocation_end">В отпуске до</div>
+      <div className="list_header">
+        <div className="header_cell_item fio">ФИО</div>
+        <div className="header_cell_item passport">Данные паспорта</div>
+        <div className="header_cell_item born_place">Место рождения</div>
+        <div className="header_cell_item driver_license_info">Данные ВУ</div>
+        <div className="header_cell_item driver_telephone">Телефон</div>
+        <div className="header_cell_item fixed_auto">Закреплен за авто</div>
+        <div className="header_cell_item in_vocation_start">В отпуске с</div>
+        <div className="header_cell_item in_vocation_end">В отпуске до</div>
       </div>
-      <div className="list_item header_filters_row">
+      <div className="header_filters_row">
         <div className="fio"><Search
             filterActive={filterActive}
             setFilterActive={setFilterActive}

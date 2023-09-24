@@ -4,3 +4,9 @@
   color: $--default-white;
   background-color: $--dark_gray_first;
 }
+
+.main_header_tabs{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

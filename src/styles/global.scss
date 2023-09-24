@@ -9,6 +9,23 @@
   background-color: #adb5bd;
 }
 
+// Цвет активной вкладки первого уровня header_nav_tabs
+.header_nav_tabs .nav-link.active {
+  background-color: $--dark_gray_second;
+  color: $--default-white;
+}
+
+// Цвет активной второго уровня second_level_nav_tabs
+.second_level_nav_tabs .nav-link.active {
+  background-color: $--dark_gray_third;
+  color: $--default-black;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-width: 0;
+  --bs-nav-tabs-link-active-bg: none;
+}
+
 .accordion-button {
   padding: 0.25rem;
 
@@ -27,16 +44,17 @@ body {
 
 .list_item {
   min-width: 100%;
-  min-height: 4rem;
-  border-top: 1px solid transparent;
-  border-bottom: 1px dashed $--tab-nav-link-hover;
+  height: 1.5rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
+}
+
+.list_item:nth-child(odd) {
+  background: $--dark_gray_header;
 }
 
 .list_item:hover {
-  background-color: $--tab-nav-link-hover;
+  background: $--tab-nav-link-hover;
 }
 
 .header_filters_row {
@@ -44,29 +62,28 @@ body {
   min-height: 2rem;
   font-weight: bold;
   position: sticky;
-  top: 5rem;
+  top: 3rem;
   background-color: $--dark_gray_third;
+  z-index: 2;
 }
 
 .list_header {
   display: flex;
-  height: 5rem;
-  font-weight: bold;
+  align-items: flex-end;
+  height: 3rem;
   position: sticky;
   top: 0px;
   background-color: $--dark_gray_third;
+  border-bottom: 1px solid $--tab-nav-link-hover;
+  z-index: 2;
 }
 
-.header_filters_row:hover,
-.list_header:hover {
-  background-color: $--dark_gray_third;
+.cell_item {
+  margin: 0;
+  padding: 0;
 }
 
-.cell_item{
-  border: 1px dashed transparent;
-  border-right: 1px dashed $--tab-nav-link-hover;
-}
-
-.cell_item:hover{
-  border: 1px solid $--dark_gray_second;
+.label_container {
+  width: 100%;
+  position: relative;
 }

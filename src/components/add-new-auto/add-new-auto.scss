@@ -3,7 +3,6 @@
 .add_new_auto_container {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   height: 100%;
 }
@@ -16,9 +15,6 @@
   border-radius: 6px;
   padding: 2rem;
   margin-bottom: 2rem;
-}
-.label_container{
-  padding: 1rem;
 }
 
 .add_new_auto_submit{

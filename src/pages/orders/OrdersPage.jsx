@@ -20,19 +20,19 @@ function OrdersPage() {
         id="all_orders_nav_tabs"
         activeKey={key}
         onSelect={(k) => tabClick(k)}
-        className="mb-3 all_orders_nav_tabs"
+        className="second_level_nav_tabs all_orders_nav_tabs"
       >
         <Tab eventKey="all_orders" title="Все (!)">
-          <AllOrdersTab />
+          {/* <AllOrdersTab /> */}
         </Tab>
         <Tab eventKey="current_year_orders" title="Год">
-          <AllOrdersTab />
+          {/* <AllOrdersTab /> */}
         </Tab>
         <Tab eventKey="current_month_orders" title="Месяц">
-          <AllOrdersTab />
+          {/* <AllOrdersTab /> */}
         </Tab>
         <Tab eventKey="current_week_orders" title="Неделя">
-          <AllOrdersTab />
+          {/* <AllOrdersTab /> */}
         </Tab>
         <Tab eventKey="current_day_orders" title="Сегодня">
           <AllOrdersTab />

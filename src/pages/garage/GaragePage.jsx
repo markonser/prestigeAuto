@@ -23,7 +23,7 @@ function GarageTab() {
         id="garage_nav_tabs"
         activeKey={key}
         onSelect={(k) => tabClick(k)}
-        className="mb-3 garage_nav_tabs"
+        className="second_level_nav_tabs garage_nav_tabs"
       >
         <Tab eventKey="garage_all_ts" title="Все авто">
           <AllAutosTab />

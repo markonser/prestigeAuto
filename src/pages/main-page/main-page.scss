@@ -7,4 +7,6 @@
 
 .tab-content{
   background-color: $--dark_gray_third;
+  min-height: 100%;
+  flex-grow: 1;
 }

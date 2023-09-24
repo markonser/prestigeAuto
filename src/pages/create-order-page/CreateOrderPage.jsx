@@ -21,7 +21,7 @@ function CreateOrderPage() {
         id="create_order_nav_tabs"
         activeKey={key}
         onSelect={(k) => tabClick(k)}
-        className="mb-3 create_order_nav_tabs"
+        className="second_level_nav_tabs create_order_nav_tabs"
       >
         <Tab eventKey="quick_order_form" title="Быстрый заказ">
           <AddNewSimpleOrder />

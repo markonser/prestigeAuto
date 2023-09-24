@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Badge} from 'react-bootstrap';
 import './search.scss';
 
-function Search({onInputChange, arr, searchByField, filterActive, setFilterActive}) {
+function Search({onInputChange, arr, searchByField, filterActive, setFilterActive, initialData}) {
   const [inputValue, setInputValue] = useState('');
 
   function onSearchChange(evt) {
@@ -13,14 +13,14 @@ function Search({onInputChange, arr, searchByField, filterActive, setFilterActiv
         return el[searchByField]?.toString().toLowerCase().includes(evt.target.value.toString().toLowerCase());
       }));
     } else {
-      onInputChange(arr);
+      onInputChange(initialData);
     }
   }
 
   function onResetFilter() {
     setInputValue('');
-    onInputChange(arr);
-    setFilterActive('')
+    onInputChange(initialData);
+    setFilterActive('');
   }
   return (
     <div className='searchContainer'>

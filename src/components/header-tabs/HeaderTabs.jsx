@@ -27,7 +27,7 @@ function HeaderTabs() {
       id="header_nav_tabs"
       activeKey={key}
       onSelect={(k) => headerTabClick(k)}
-      className="mb-1 mt-1 header_nav_tabs"
+      className="mt-1 header_nav_tabs"
     >
       <Tab eventKey="map" title="Карта">
         <Map />

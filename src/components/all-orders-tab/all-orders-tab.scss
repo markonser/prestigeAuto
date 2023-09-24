@@ -1,8 +1,9 @@
 @import '../../styles/variables';
 
-.orders_tab_container{
+.orders_tab_container {
   min-width: fit-content;
 }
+
 .order_date,
 .gos_number,
 .work_time_start,
@@ -12,15 +13,17 @@
   min-width: 7rem;
   max-width: 7rem;
   text-align: center;
+  overflow: hidden;
 }
 
-.disp_name,
+.initial_driver_task,
 .client_name,
 .address_start,
 .address_end,
 .comments {
   min-width: 12rem;
   max-width: 12rem;
+  overflow: hidden;
 }
 
 .work_in_hours,
@@ -35,4 +38,32 @@
   min-width: 5rem;
   max-width: 5rem;
   text-align: center;
+  overflow: hidden;
+}
+
+.big_text {
+  position: relative;
+  min-width: 12rem;
+  max-width: 12rem;
+  overflow-y: hidden;
+}
+
+.big_text:hover {
+  overflow-y: visible;
+}
+
+.big_text .initial_driver_task:hover,
+.big_text .client_name:hover,
+.big_text .address_start:hover,
+.big_text .comments:hover,
+.big_text .address_end:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  z-index: 2;
+  overflow-y: auto;
+  background: $--tab-nav-link-hover;
+  border: 1px solid $--default-black;
 }
